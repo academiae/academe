@@ -1,0 +1,3 @@
+[submodule "module/Application"]
+	path = module/Application
+	url = https://github.com/CodingMatters/ZFModuleIni.git
