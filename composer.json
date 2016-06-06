@@ -2,7 +2,7 @@
     "name": "academiae/academe",
     "description": "Initial Zend Framework skeleton application structure",
     "license": "MIT",
-    "type": "application",
+    "type": "project",
     "keywords": [
         "skeleton application",
         "zf2"
@@ -40,7 +40,7 @@
         }
     },
     "extra": [],
-    "scripts": {        
+    "scripts": {
         "post-install-cmd": [
             "@install-ui-component",
             "@test"
