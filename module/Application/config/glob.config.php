@@ -8,7 +8,7 @@ return [
      * @see https://github.com/EvanDotPro/EdpModuleLayouts/blob/master/README.md
      */
     'module_layouts' => [
-        'Application' => 'layout/layout'
+        'Application' => 'application/layout'
     ],
 
     /**

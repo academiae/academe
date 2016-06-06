@@ -1,5 +1,5 @@
 {
-    "name": "codingmatters/zf-skeleton-app",
+    "name": "academiae/academe",
     "description": "Initial Zend Framework skeleton application structure",
     "license": "MIT",
     "type": "application",
@@ -18,10 +18,11 @@
     "require": {
         "php": "^5.6 || ^7.0",
         "roave/security-advisories": "dev-master",
-        "evandotpro/edp-module-layouts": "dev-master",
-        "ocramius/proxy-manager": "^2.0",
         "zendframework/zend-component-installer": "^1.0 || ^0.2 || ^1.0.0-dev@dev",
-        "codingmatters/site-module-ini": "^1.0 || ^0.1"
+        "evandotpro/edp-module-layouts": "dev-master",
+        "ocramius/proxy-manager": "^2.0",        
+        "codingmatters/site-module-ini": "^1.0 || ^0.1",
+        "academiae/enrollment-component-installer": "^1.0 || ^0.1"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.0",

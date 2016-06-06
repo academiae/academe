@@ -13,11 +13,11 @@ return [
     'application' => [
         'type'      => Literal::class,
         'options'   => [
-            'route'     => '/application',
+            'route'     => '/',
             'defaults'  => [
                 'controller'    => Controller\IndexController::class,
                 'action'        => 'index'
             ]
         ]
-    ]    
+    ]
 ];
