@@ -40,16 +40,14 @@
         }
     },
     "extra": [],
-    "scripts": {
-        "post-root-package-install": [
-            "git submodule init",
-            "git submodule update"
-        ],
+    "scripts": {        
         "post-install-cmd": [
-            "@install-ui-component"
+            "@install-ui-component",
+            "@test"
         ],
         "post-update-cmd": [
-            "@update-ui-component"
+            "@update-ui-component",
+            "@test"
         ],
         "check": [
             "@cs",
