@@ -13,7 +13,7 @@ return [
     'application' => [
         'type'      => Literal::class,
         'options'   => [
-            'route'     => '/',
+            'route'     => '/application',
             'defaults'  => [
                 'controller'    => Controller\IndexController::class,
                 'action'        => 'index'

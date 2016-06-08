@@ -3,7 +3,7 @@
 /**
  * The MIT License
  *
- * Copyright (c) 2016, Coding Matters, Inc. (Gab Amba <gamba@gabbydgab.com>)
+ * Copyright (c) 2016 Coding Matters, Inc. (Gab Amba <gamba@gabbydgab.com>)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,28 +24,22 @@
  * THE SOFTWARE.
  */
 
-namespace Application;
+namespace Application\Page;
 
-class Module
+use Zend\Expressive\Template\TemplateRendererInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Message\ResponseInterface;
+use Zend\Diactoros\Response\HtmlResponse;
+
+final class ContactPage extends AbstractPage
 {
-    private $config = [];
-
-    /**
-     * Return default configuration for zend-mvc applications.
-     */
-    public function getConfig()
+    public function __construct(TemplateRendererInterface $template = null)
     {
-        $provider = new ConfigProvider();
-
-        $this->config = $provider->getTemplateConfig();
-        $this->config['middleware_pipeline']    = $provider->getMiddlewareConfig();
-        $this->config['service_manager']        = $provider->getDependencyConfig();
-        $this->config['router']['routes']       = $provider->getRouteConfig();
-        $this->config['navigation']             = $provider->getNavigationConfig();
-        $this->config['controllers']            = $provider->getControllerConfig();
-        $this->config['controller_plugins']     = $provider->getControllerPluginConfig();
-
-        // Overrides the default config to use Glob module config
-        return array_merge_recursive($this->config, $provider->getGlobConfig());
+        parent::__construct($template);
+    }
+    
+    public function dispatch(ServerRequestInterface $request, ResponseInterface $response, callable $next = null)
+    {
+        return new HtmlResponse($this->template->render("page::contact", $this->data));
     }
 }
