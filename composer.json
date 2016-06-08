@@ -1,13 +1,10 @@
 {
-    "name": "academiae/academe",
-    "description": "Initial Zend Framework skeleton application structure",
+    "name": "academiae/academe-skeleton-installer",
+    "description": "Vanilla Integration of an Academe System",
     "license": "MIT",
     "type": "project",
-    "keywords": [
-        "skeleton application",
-        "zf2"
-    ],
-    "homepage": "https://github.com/CodingMatters/ZFSkeletonApp/",
+    "keywords": ["academe system", "zf project"],
+    "homepage": "https://chronicles.codingmatters.io/academe/",
     "authors": [
         {
             "name": "Gab Amba",
@@ -18,11 +15,12 @@
     "require": {
         "php": "^5.6 || ^7.0",
         "roave/security-advisories": "dev-master",
-        "zendframework/zend-component-installer": "^1.0 || ^0.2 || ^1.0.0-dev@dev",
+        "zendframework/zend-component-installer": "^1.0 || ~0.2",
+        "academiae/enrollment-component-installer": "^1.0 || ~0.1",
+        "zendframework/zend-expressive-zendviewrenderer": "^1.1",
         "evandotpro/edp-module-layouts": "dev-master",
-        "ocramius/proxy-manager": "^2.0",        
-        "codingmatters/site-module-ini": "^1.0 || ^0.1",
-        "academiae/enrollment-component-installer": "^1.0 || ^0.1"
+        "codingmatters/site-module-ini": "^1.0 || ~0.1",
+        "codingmatters/dashboard-module-ini": "^1.0 || ~0.1"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.0",
