@@ -3,14 +3,15 @@
 return [
     // This should be an array of module namespaces used in the application.
     'modules' => [
-        'Dashboard',
         'CodingMatters\Kernel',
         'Zend\Router',
         'Zend\Validator',        
         'Academiae\Student',
         'Academiae\Enrollment',
+        'Dashboard',
         'Site',
-        'Application' 
+        'Application',
+        'EdpModuleLayouts'
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => [
