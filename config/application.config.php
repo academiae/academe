@@ -2,10 +2,10 @@
 
 return [
     // This should be an array of module namespaces used in the application.
-    'modules' => [
+    'modules' => [        
         'CodingMatters\Kernel',
         'Zend\Router',
-        'Zend\Validator',        
+        'Zend\Validator',
         'Academiae\Student',
         'Academiae\Enrollment',
         'Dashboard',
