@@ -5,18 +5,16 @@ return [
     'view_manager' => [
         'template_map'          => [],
         'template_path_stack'   => [
-            'application'   => __DIR__ . '/../view'
+            'application'   => __DIR__ . '/../templates'
         ]
     ],
 
     // Zend Expressive Configuration
     'templates'     => [
        'layout'     => "application/layout",
-        'map'       => [
-            'application/layout'        => __DIR__ . '/../view/layout/layout.phtml'
-        ],
+        'map'       => [],
         'paths'     => [
-            'application'   => [__DIR__ . '/../view']
+            'application'   => [__DIR__ . '/../templates']
         ]
     ],
 
