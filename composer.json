@@ -17,9 +17,7 @@
         "roave/security-advisories": "dev-master",
         "evandotpro/edp-module-layouts": "dev-master",
         "zendframework/zend-component-installer": "^1.0 || ~0.2",
-        "academiae/enrollment-component-installer": "^1.0 || ~0.1",
-        "codingmatters/site-module-ini": "^1.0 || ~0.1",
-        "codingmatters/dashboard-module-ini": "^1.0 || ~0.1"
+        "zendframework/zend-skeleton-installer": "^1.0 || ~0.1"
     },
     "require-dev": {
         "zendframework/zend-test": "^3.0",
@@ -36,7 +34,34 @@
             "ApplicationTest\\": "module/Application/test/"
         }
     },
-    "extra": [],
+    "extra": {
+        "zend-skeleton-installer": [
+            {
+                "name": "codingmatters/site-module-ini",
+                "constraint": "^1.0 || ~0.1",
+                "prompt": "Would you like to install site module?",
+                "module": true
+            },
+            {
+                "name": "codingmatters/dashboard-module-ini",
+                "constraint": "^1.0 || ~0.1",
+                "prompt": "Would you like to install dashboard module?",
+                "module": true
+            },
+            {
+                "name": "academiae/enrollment-component-installer",
+                "constraint": "^1.0 || ~0.1",
+                "prompt": "Would you like to install enrollment component?",
+                "module": true
+            },
+            {
+                "name": "academiae/leave-component-installer",
+                "constraint": "^1.0 || ~0.1",
+                "prompt": "Would you like to install leave component?",
+                "module": true
+            }
+        ]
+    },
     "scripts": {
         "post-install-cmd": [
             "@install-ui-component",
