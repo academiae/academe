@@ -2,6 +2,7 @@ Vanilla Integration of an Academe System
 ========
 
 TO DO:
+ - [ ] Web Page
  - [ ] Blog System
  - [ ] Enrollment System
  - [ ] Human Resource System
