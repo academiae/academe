@@ -2,5 +2,14 @@ Vanilla Integration of an Academe System
 ========
 
 TO DO:
+ - [ ] Blog System
  - [ ] Enrollment System
- - [ ] Leave Management System
+ - [ ] Human Resource System
+ - [ ] Accounting System
+ - [ ] Inventory System
+ - [ ] Organization Management System
+ - [ ] Bills of Materials
+ - [ ] Purchasing System
+ - [ ] Costing System
+ - [ ] Sales and Distribution System
+ 
