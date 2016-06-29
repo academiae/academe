@@ -8,5 +8,6 @@
 return [
     'Zend\Router',
     'Zend\Validator',
+    'Site',
     'Application'
 ];
