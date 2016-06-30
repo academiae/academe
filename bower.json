@@ -1,9 +1,6 @@
 {
     "name": "academe-skeleton-application",
     "dependencies": {
-        "jquery": "^2.2",
-        "jquery-ui": "^1.11",
-        "components-font-awesome": "^4.6",
-        "components-bootstrap": "^3.3"
+        "codingmatters-site-ui-dependencies": "^1.0 || ~0.1"
     }
 }
