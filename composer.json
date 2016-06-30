@@ -16,7 +16,6 @@
         "php": "^5.6 || ^7.0",
         "roave/security-advisories": "dev-master",
         "zendframework/zend-skeleton-installer": "^1.0 || ~0.1",
-<<<<<<< HEAD
         "zendframework/zend-component-installer": "^1.0 || ^0.3",
         "zendframework/zend-developer-tools": "^1.1.0",        
         "zfcampus/zf-development-mode": "^3.0",   
@@ -24,20 +23,10 @@
         "codingmatters/site-component-installer": "^1.0 || ~0.1"
     },
     "require-dev": {
-=======
-        "zendframework/zend-component-installer": "^1.0 || ~0.3",
-        "zendframework/zend-developer-tools": "^1.1.0",
-        "zfcampus/zf-development-mode": "^3.0",
-        "zendframework/zend-mvc": "^3.0.1",
-        "codingmatters/zf-module-ini": "^1.0 || ~0.4"
-    },
-    "require-dev": {        
->>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
         "zendframework/zend-test": "^3.0",
         "squizlabs/php_codesniffer": "^2.3",
         "phpbench/phpbench": "^0.11"
     },
-<<<<<<< HEAD
     "extra": {
         "zend-skeleton-installer": [
             {
@@ -48,8 +37,6 @@
             }
         ]
     },
-=======
->>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/"
@@ -60,41 +47,16 @@
             "ApplicationTest\\": "module/Application/test/"
         }
     },
-<<<<<<< HEAD
     "scripts": {
         "post-install-cmd": [
             "@install-ui-component",
-            "@include-module-config"
-        ],
-        "post-update-cmd": [
-            "@update-ui-component",
-            "@include-module-config"
-=======
-    "extra": {
-        "zend-skeleton-installer": [
-            {
-                "name": "academiae/enrollment-component-installer",
-                "constraint": "^1.0 || ~0.1",
-                "prompt": "Would you like to install enrollment component?",
-                "module": true
-            },
-            {
-                "name": "academiae/leave-component-installer",
-                "constraint": "^1.0 || ~0.1",
-                "prompt": "Would you like to install leave component?",
-                "module": true
-            }
-        ]
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "@install-ui-component",
+            "@include-module-config",
             "@test"
         ],
         "post-update-cmd": [
             "@update-ui-component",
+            "@include-module-config",
             "@test"
->>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
         ],
         "check": [
             "@cs",

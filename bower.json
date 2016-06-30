@@ -1,27 +1,9 @@
 {
-<<<<<<< HEAD
     "name": "academe-skeleton-application",
     "dependencies": {
         "jquery": "^2.2",
         "jquery-ui": "^1.11",
         "components-font-awesome": "^4.6",
-=======
-    "name": "codingmatters-academe-ui-dependencies",    
-    "homepage": "https://github.com/CodingMatters/Academe",
-    "authors": [
-        "gabbydgab <gamba@gabbydgab.com>"
-    ],
-    "description": "3rd party dependencies",
-    "moduleType": [
-        "globals"
-    ],
-    "license": "MIT",
-    "directory": "public/assets",
-    "dependencies": {
-        "jquery": "^2.1",
-        "jquery-ui": "^1.11",
-        "components-font-awesome": "^4.2",
->>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
         "components-bootstrap": "^3.3"
     }
 }

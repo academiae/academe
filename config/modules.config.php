@@ -8,11 +8,7 @@
 return [
     'Zend\Router',
     'Zend\Validator',
-<<<<<<< HEAD
-    'Dashboard',
-    'Site',    
-=======
     'Site',
->>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
+    'Dashboard',
     'Application'
 ];

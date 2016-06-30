@@ -3,11 +3,7 @@
 /**
  * The MIT License
  *
-<<<<<<< HEAD
- * Copyright (c) 2014, contributors of Coding Matters.
-=======
  * Copyright (c) 2016, Coding Matters, Inc. (Gab Amba <gamba@gabbydgab.com>)
->>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -41,9 +37,5 @@
  */
 
 return [
-<<<<<<< HEAD
-    
-=======
     // Your global config here
->>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
 ];
