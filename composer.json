@@ -76,12 +76,14 @@
             "@copy-assets"
         ],
         "remove-assets": [
+            "rm -rf public/assets/site",
             "rm -rf public/assets/jquery",
             "rm -rf public/assets/jquery-ui",
             "rm -rf public/assets/font-awesome",
             "rm -rf public/assets/bootstrap"
         ],
         "copy-assets": [
+            "cp -ar bower_components/codingmatters-site-ui-dependencies public/assets/site",
             "cp -ar bower_components/jquery/dist public/assets/jquery",
             "cp -ar bower_components/jquery-ui public/assets/jquery-ui",
             "cp -ar bower_components/components-font-awesome public/assets/font-awesome",
