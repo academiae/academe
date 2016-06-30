@@ -24,18 +24,24 @@
  * THE SOFTWARE.
  */
 
-/**
- * Local Configuration Override
- *
- * This configuration override file is for overriding environment-specific and
- * security-sensitive configuration information. Copy this file without the
- * .dist extension at the end and populate values as needed.
- *
- * @NOTE: This file is ignored from Git by default with the .gitignore included
- * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
- * credentials from accidentally being committed into version control.
- */
+$settings = [
+    /**
+     * Application Name
+     */
+    'application_name' => 'MyApp',
+
+    /**
+     * Organization Info
+     */
+    'organization' => 'Your Organization',
+
+    /**
+     * Copyright year
+     */
+    'copyright_year' => date('Y'),
+];
+
 
 return [
-    // Your local config here
+    'application_settings' => $settings
 ];

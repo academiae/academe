@@ -1,6 +1,5 @@
 Vanilla Integration of an Academe System 
 ========
-
 TO DO:
  - [ ] Web Page
  - [ ] Blog System
@@ -13,4 +12,3 @@ TO DO:
  - [ ] Purchasing System
  - [ ] Costing System
  - [ ] Sales and Distribution System
- 

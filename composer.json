@@ -16,13 +16,13 @@
         "php": "^5.6 || ^7.0",
         "roave/security-advisories": "dev-master",
         "zendframework/zend-skeleton-installer": "^1.0 || ~0.1",
-        "zendframework/zend-component-installer": "^1.0 || ~0.3",
-        "zendframework/zend-developer-tools": "^1.1.0",
-        "zfcampus/zf-development-mode": "^3.0",
+        "zendframework/zend-component-installer": "^1.0 || ^0.3",
+        "zendframework/zend-developer-tools": "^1.1.0",        
+        "zfcampus/zf-development-mode": "^3.0",   
         "zendframework/zend-mvc": "^3.0.1",
-        "codingmatters/zf-module-ini": "^1.0 || ~0.4"
+        "codingmatters/site-component-installer": "^1.0 || ~0.1"
     },
-    "require-dev": {        
+    "require-dev": {
         "zendframework/zend-test": "^3.0",
         "squizlabs/php_codesniffer": "^2.3",
         "phpbench/phpbench": "^0.11"
@@ -44,22 +44,18 @@
                 "constraint": "^1.0 || ~0.1",
                 "prompt": "Would you like to install enrollment component?",
                 "module": true
-            },
-            {
-                "name": "academiae/leave-component-installer",
-                "constraint": "^1.0 || ~0.1",
-                "prompt": "Would you like to install leave component?",
-                "module": true
             }
         ]
     },
     "scripts": {
         "post-install-cmd": [
             "@install-ui-component",
+            "@include-module-config",
             "@test"
         ],
         "post-update-cmd": [
             "@update-ui-component",
+            "@include-module-config",
             "@test"
         ],
         "check": [

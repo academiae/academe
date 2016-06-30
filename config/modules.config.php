@@ -7,7 +7,8 @@
  */
 return [
     'Zend\Router',
-    'Zend\Validator',
+    'Zend\Validator',    
     'Site',
+    'Dashboard',
     'Application'
 ];

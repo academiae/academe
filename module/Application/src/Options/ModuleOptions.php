@@ -24,18 +24,54 @@
  * THE SOFTWARE.
  */
 
-/**
- * Local Configuration Override
- *
- * This configuration override file is for overriding environment-specific and
- * security-sensitive configuration information. Copy this file without the
- * .dist extension at the end and populate values as needed.
- *
- * @NOTE: This file is ignored from Git by default with the .gitignore included
- * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
- * credentials from accidentally being committed into version control.
- */
+namespace Application\Options;
 
-return [
-    // Your local config here
-];
+use Zend\Stdlib\AbstractOptions;
+
+/**
+ * Application\Options\ModuleOptions
+ *
+ * @package Application\Options
+ */
+class ModuleOptions extends AbstractOptions
+{
+    protected $__strictMode__ = false;
+
+    protected $applicationName = '';
+
+    protected $organization = '';
+
+    protected $copyrightYear;
+
+
+    public function setApplicationName($applicationName)
+    {
+        $this->applicationName = $applicationName;
+    }
+
+    public function getApplicationName()
+    {
+        return $this->applicationName;
+    }
+
+    public function setOrganization($organization)
+    {
+        $this->organization = $organization;
+    }
+
+    public function getOrganization()
+    {
+        return $this->organization;
+    }
+
+    public function setCopyrightYear($copyrightYear = null)
+    {
+        $year = date('Y');
+        $this->copyrightYear = ($copyrightYear !== $year) ? $copyrightYear . '-' . $year : $year;
+    }
+
+    public function getCopyrightYear()
+    {
+        return $this->copyrightYear;
+    }
+}

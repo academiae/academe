@@ -3,7 +3,7 @@
 /**
  * The MIT License
  *
- * Copyright (c) 2016, Coding Matters, Inc. (Gab Amba <gamba@gabbydgab.com>)
+ * Copyright (c) 2016 Coding Matters, Inc.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,18 +24,40 @@
  * THE SOFTWARE.
  */
 
-/**
- * Local Configuration Override
- *
- * This configuration override file is for overriding environment-specific and
- * security-sensitive configuration information. Copy this file without the
- * .dist extension at the end and populate values as needed.
- *
- * @NOTE: This file is ignored from Git by default with the .gitignore included
- * in ZendSkeletonApplication. This is a good practice, as it prevents sensitive
- * credentials from accidentally being committed into version control.
- */
+namespace ApplicationTest;
 
-return [
-    // Your local config here
-];
+use Application\Module;
+
+class ModuleTest extends \PHPUnit_Framework_TestCase
+{
+    protected $config;
+
+    public function setUp()
+    {
+        $module = new Module();
+        $this->config = $module->getConfig();
+    }
+
+    /**
+     * @test
+     * @dataProvider configKeys
+     */
+    public function moduleHasFollowingConfig($key)
+    {
+        $this->assertArrayHasKey($key, $this->config);
+    }
+
+    public function configKeys()
+    {
+        return [
+            'service_manager'       => ['service_manager'],
+            'templates'             => ['templates'],
+            'view_manager'          => ['view_manager'],
+            'middleware_pipeline'   => ['middleware_pipeline'],
+            'router'                => ['router'],
+            'view_helpers'          => ['view_helpers'],
+            'controllers'           => ['controllers'],
+            'controller_plugins'    => ['controller_plugins'],
+        ];
+    }
+}
