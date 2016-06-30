@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ZFSkeletonApp [![Latest Stable Version](https://poser.pugx.org/codingmatters/zf-skeleton-app/v/stable.svg)](https://packagist.org/packages/codingmatters/zf-skeleton-app) [![Total Downloads](https://poser.pugx.org/codingmatters/zf-skeleton-app/downloads.svg)](https://packagist.org/packages/codingmatters/zf-skeleton-app) [![Latest Unstable Version](https://poser.pugx.org/codingmatters/zf-skeleton-app/v/unstable.svg)](https://packagist.org/packages/codingmatters/zf-skeleton-app) [![License](https://poser.pugx.org/codingmatters/zf-skeleton-app/license.svg)](https://packagist.org/packages/codingmatters/zf-skeleton-app)
 =============
 
@@ -24,3 +25,11 @@ and use `composer` to install dependencies using the `create-project` command:
 
     curl -s https://getcomposer.org/installer | php --
     php composer.phar create-project --prefer-source --no-dev codingmatters/zf-skeleton-app path/to/install
+=======
+Vanilla Integration of an Academe System 
+========
+
+TO DO:
+ - [ ] Enrollment System
+ - [ ] Leave Management System
+>>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce

@@ -1,5 +1,8 @@
 # 3rd Party Dependencies
+<<<<<<< HEAD
 site/
+=======
+>>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
 bootstrap/
 font-awesome/
 jquery/

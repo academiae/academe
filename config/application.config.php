@@ -51,4 +51,8 @@ return [
    // Initial configuration with which to seed the ServiceManager.
    // Should be compatible with Zend\ServiceManager\Config.
    // 'service_manager' => [],
+<<<<<<< HEAD
 ];
+=======
+];
+>>>>>>> 6478952cb5581c92c2fa379bf87b1ba5c2c04fce
